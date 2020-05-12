@@ -1,0 +1,6 @@
+C:\Users\omidh\Documents\GitHub\Simple-game-\Simple_Game\Simple_Game\bin\Debug\Simple_Game.exe.config
+C:\Users\omidh\Documents\GitHub\Simple-game-\Simple_Game\Simple_Game\bin\Debug\Simple_Game.exe
+C:\Users\omidh\Documents\GitHub\Simple-game-\Simple_Game\Simple_Game\bin\Debug\Simple_Game.pdb
+C:\Users\omidh\Documents\GitHub\Simple-game-\Simple_Game\Simple_Game\obj\Debug\Simple_Game.csprojAssemblyReference.cache
+C:\Users\omidh\Documents\GitHub\Simple-game-\Simple_Game\Simple_Game\obj\Debug\Simple_Game.exe
+C:\Users\omidh\Documents\GitHub\Simple-game-\Simple_Game\Simple_Game\obj\Debug\Simple_Game.pdb

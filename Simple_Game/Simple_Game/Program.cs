@@ -9,18 +9,26 @@ namespace Simple_Game
     class Program
     {
         static int playerPosX = 1, playerPosY = 1;
-        static int length = 4, height = 2;
+        static int enemyPosX, enemyPosY;
+        static int length = 10, height = 10;
         static char player = '*', space = '-';
+        static Random random = new Random();
 
 
 
         static void Main(string[] args)
         {
+            enemyPosX = length;
+            enemyPosY = height;
+
+
             while (true)
             {
+                Draw();
+
                 ConsoleKeyInfo keyPressed = Console.ReadKey();
 
-                if ((keyPressed.Key == ConsoleKey.W && playerPosY != 1) || (keyPressed.Key == ConsoleKey.S && playerPosX != length))
+                if ((keyPressed.Key == ConsoleKey.W && playerPosY != 1) || (keyPressed.Key == ConsoleKey.S && playerPosY != height))
                 {
                     playerPosY += (keyPressed.Key == ConsoleKey.W) ? 1 : -1;
                 }
@@ -29,7 +37,19 @@ namespace Simple_Game
                     playerPosX += (keyPressed.Key == ConsoleKey.D) ? 1 : -1;
                 }
 
-                Draw();
+                MoveEnemy();
+               
+            }
+        }
+
+        static void MoveEnemy()
+        {
+            if (random.Next(0, 11)> 5 && playerPosX != enemyPosX)
+            {
+                if (playerPosX > enemyPosX) --enemyPosX;
+
+                else if (playerPosX > enemyPosX) ++enemyPosX;
+        
             }
         }
 
